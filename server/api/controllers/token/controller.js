@@ -1,27 +1,21 @@
-import ExamplesService from '../../services/token.service';
+import ExamplesService from "../../services/token.service";
 
 export class Controller {
   all(req, res) {
-    ExamplesService.all()
-      .then(r => res.json(r));
+    ExamplesService.all().then((r) => res.json(r));
   }
 
   byId(req, res) {
-    ExamplesService
-      .byId(req.params.id)
-      .then(r => {
-        if (r) res.json(r);
-        else res.status(404).end();
-      });
+    ExamplesService.byId(req.params.id).then((r) => {
+      if (r) res.json(r);
+      else res.status(404).end();
+    });
   }
 
   create(req, res) {
-    ExamplesService
-      .create(req.body.name)
-      .then(r => res
-        .status(201)
-        .location(`/contract/api/v1/token/${r.id}`)
-        .json(r));
+    ExamplesService.create(req.body.name).then((r) =>
+      res.status(201).location(`/contract/api/v1/token/${r.id}`).json(r)
+    );
   }
 }
 export default new Controller();

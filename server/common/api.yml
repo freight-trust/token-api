@@ -11,7 +11,7 @@ tags:
   - name: Specification
     description: The Token ERC-20 and API specification
   - name: Staking
-    description: The Token ERC-20 Staking API 
+    description: The Token ERC-20 Staking API
 paths:
   /token:
     get:
@@ -26,19 +26,19 @@ paths:
               schema:
                 type: array
                 items:
-                  $ref: '#/components/schemas/Circulating'
+                  $ref: "#/components/schemas/Circulating"
         4XX:
           description: Network Connectivity Issue - Unable to Process Request
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/Error'
+                $ref: "#/components/schemas/Error"
         5XX:
           description: Error - Status 5xx
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/Error'
+                $ref: "#/components/schemas/Error"
     post:
       tags:
         - Staking
@@ -48,7 +48,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/Staking'
+              $ref: "#/components/schemas/Staking"
         required: true
       responses:
         201:
@@ -56,19 +56,19 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/Success'
+                $ref: "#/components/schemas/Success"
         4XX:
-          description: Network Issue - Connectivity 
+          description: Network Issue - Connectivity
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/Error'
+                $ref: "#/components/schemas/Error"
         5XX:
           description: 5xx - not found
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/Error'
+                $ref: "#/components/schemas/Error"
   /token/{id}:
     get:
       tags:
@@ -86,19 +86,19 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/Token'
+                $ref: "#/components/schemas/Token"
         4XX:
           description: ERROR 4XX
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/Error'
+                $ref: "#/components/schemas/Error"
         5XX:
           description: ERROR 5XX
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/Error'
+                $ref: "#/components/schemas/Error"
   /spec:
     get:
       tags:

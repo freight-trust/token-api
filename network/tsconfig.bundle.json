@@ -1,8 +1,8 @@
 {
-	"extends": "./tsconfig.json",
-	
-	"compilerOptions": {
-		"module": "es6",
-		"outDir": "./bundle"
-	}
+  "extends": "./tsconfig.json",
+
+  "compilerOptions": {
+    "module": "es6",
+    "outDir": "./bundle"
+  }
 }

@@ -1,1 +1,4 @@
-export enum syncmodes { default = 'default', archive = 'archive'}
+export enum syncmodes {
+  default = "default",
+  archive = "archive",
+}

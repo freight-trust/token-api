@@ -1,38 +1,37 @@
-import { Address } from '../../entities/Address'
-import { IClientAccountGetminedblocks } from '../../interfaces/Account'
-import { ClientPagingBase } from '../ClientPagingBase'
+import { Address } from "../../entities/Address";
+import { IClientAccountGetminedblocks } from "../../interfaces/Account";
+import { ClientPagingBase } from "../ClientPagingBase";
 
 /**
  * Client for the account balance
  */
-export class ClientAccountGetminedblocks extends ClientPagingBase implements IClientAccountGetminedblocks  {
-    /**
-     * module of the etherscan api to request
-     */
-    static module: string = 'account'
+export class ClientAccountGetminedblocks extends ClientPagingBase
+  implements IClientAccountGetminedblocks {
+  /**
+   * module of the etherscan api to request
+   */
+  static module: string = "account";
 
-    /**
-     * action of the etherscan api to request
-     */
-    static action: string = 'getstakingblocks'
+  /**
+   * action of the etherscan api to request
+   */
+  static action: string = "getstakingblocks";
 
-    /**
-     * Address to lookup the account balance
-     */
-    address: Address
+  /**
+   * Address to lookup the account balance
+   */
+  address: Address;
 
-    /**
-     * tag to limit the results
-     */
-    type: string
+  /**
+   * tag to limit the results
+   */
+  type: string;
 
-    constructor(
-        address: Address,
-        type: string) {
-      super()
-      this.address = address
-      this.type = type
-    }
+  constructor(address: Address, type: string) {
+    super();
+    this.address = address;
+    this.type = type;
+  }
 
   /**
    * generates a json represenatation of the
@@ -43,6 +42,6 @@ export class ClientAccountGetminedblocks extends ClientPagingBase implements ICl
       address: this.address.toString(),
       module: ClientAccountGetminedblocks.module,
       type: this.type.toString(),
-    }
+    };
   }
 }

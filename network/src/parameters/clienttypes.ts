@@ -1,1 +1,4 @@
-export enum clienttypes { geth = 'geth', parity = 'parity'}
+export enum clienttypes {
+  geth = "geth",
+  parity = "parity",
+}

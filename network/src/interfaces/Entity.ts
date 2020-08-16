@@ -5,9 +5,9 @@ export interface IEntity {
   /**
    * Validatees a entitiy and throws on error
    */
-  validate(): void
+  validate(): void;
   /**
    * Checks validity
    */
-  valid(): boolean
+  valid(): boolean;
 }

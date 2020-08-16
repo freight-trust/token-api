@@ -1,1 +1,4 @@
-export enum operand {and = 'and', or = 'or'}
+export enum operand {
+  and = "and",
+  or = "or",
+}

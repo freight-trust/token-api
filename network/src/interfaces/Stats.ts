@@ -1,36 +1,35 @@
-import { Clienttype } from '../entities/Clienttype'
-import { Syncmode } from '../entities/Syncmode'
-import { UsDate } from '../entities/UsDate'
+import { Clienttype } from "../entities/Clienttype";
+import { Syncmode } from "../entities/Syncmode";
+import { UsDate } from "../entities/UsDate";
 
 /**
  * Interface to the Stats/Tokensupply api
  */
-export interface IClientStatsTokensupplyRequest  {
+export interface IClientStatsTokensupplyRequest {
   /**
    * Contract address
    */
-  contractaddress: string
+  contractaddress: string;
 }
 
 export interface IClientStatsChainsizeRequest {
-
   /**
    * Chain startdate
    */
-  startdate: UsDate
+  startdate: UsDate;
 
   /**
    * Chain enddate
    */
-  enddate: UsDate
+  enddate: UsDate;
 
   /**
    * Type of client producing the stats
    */
-  clienttype: Clienttype
+  clienttype: Clienttype;
 
   /**
    * Syncmode
    */
-  syncmode: Syncmode
+  syncmode: Syncmode;
 }

@@ -1,11 +1,11 @@
-import { PositiveNumber } from '../entities/PositiveNumber'
+import { PositiveNumber } from "../entities/PositiveNumber";
 
 /**
  * Interface to the Account/Balance api
  */
-export interface IClientStakingGetstakingrewardRequest  {
+export interface IClientStakingGetstakingrewardRequest {
   /**
    * Blocknumber, this is to check against the epochs
    */
-  blockno: PositiveNumber
+  blockno: PositiveNumber;
 }

@@ -1,1 +1,4 @@
-export enum booleans { true = 'true', false = 'false'}
+export enum booleans {
+  true = "true",
+  false = "false",
+}

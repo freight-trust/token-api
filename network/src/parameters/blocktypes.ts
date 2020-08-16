@@ -1,1 +1,4 @@
-export enum blocktypes {blocks = 'blocks', uncles = 'uncles'}
+export enum blocktypes {
+  blocks = "blocks",
+  uncles = "uncles",
+}

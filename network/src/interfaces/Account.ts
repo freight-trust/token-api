@@ -1,35 +1,35 @@
-import { Address } from '../entities/Address'
-import { Contractaddress } from '../entities/Contractaddress'
-import { Paging } from '../entities/Paging'
-import { Sort } from '../entities/Sort'
+import { Address } from "../entities/Address";
+import { Contractaddress } from "../entities/Contractaddress";
+import { Paging } from "../entities/Paging";
+import { Sort } from "../entities/Sort";
 
 /**
  * Interface to the Account/Balance api
  */
-export interface IClientAccountBalanceRequest  {
+export interface IClientAccountBalanceRequest {
   /**
    * Ethereum address
    */
-  address: Address
+  address: Address;
   /**
    * Tag to limit results
    */
-  tag: string
+  tag: string;
 }
 
 /**
  * Interface to the Account/Balance api
  */
-export interface IClientAccountTokenbalanceRequest  {
+export interface IClientAccountTokenbalanceRequest {
   /**
    * Ethereum address
    */
-  address: Address
+  address: Address;
 
   /**
    * Ethereum contract address
    */
-  contractaddress: Address
+  contractaddress: Address;
 }
 
 /**
@@ -39,11 +39,11 @@ export interface IClientAccountBalanceMultiRequest {
   /**
    * Array of ethereum addresses
    */
-  address: Address[]
+  address: Address[];
   /**
    * Tag to limit results
    */
-  tag: string
+  tag: string;
 }
 
 /**
@@ -53,91 +53,91 @@ export interface IClientAccountTxlistRequest {
   /**
    * Ethereum address
    */
-  address: Address
+  address: Address;
   /**
    * Block to start reading data
    */
-  startblock: string
+  startblock: string;
   /**
    * Read data to
    */
-  endblock: string
+  endblock: string;
   /**
    * Paging actual page
    */
-  paging?: Paging
+  paging?: Paging;
   /**
    * Sort Parameter
    */
-  sort: Sort
+  sort: Sort;
 }
 
-export interface IClientAccountTxlistInternalTxhash  {
+export interface IClientAccountTxlistInternalTxhash {
   /**
    * Block to start reading data
    */
-  startblock: string
+  startblock: string;
   /**
    * Read data to
    */
-  endblock: string
+  endblock: string;
   /**
    * hash of the transaction
    */
-  txhash: string
+  txhash: string;
   /**
    * Paging actual page
    */
-  paging?: Paging
+  paging?: Paging;
   /**
    * Sort Parameter
    */
-  sort: Sort
+  sort: Sort;
 }
 
 export interface IClientAccountTokentx {
   /**
    * Ethereum address
    */
-  address?: Address | Contractaddress
+  address?: Address | Contractaddress;
   /**
    * Block to start reading data
    */
-  startblock: string
+  startblock: string;
   /**
    * Read data to
    */
-  endblock: string
+  endblock: string;
   /**
    * Paging actual page
    */
-  paging?: Paging
+  paging?: Paging;
 
   /**
    * Sort Parameter
    */
-  sort: Sort
+  sort: Sort;
 }
 
 export interface IClientAccountGetminedblocks {
   /**
    * Ethereum address
    */
-  address?: Address | Contractaddress
+  address?: Address | Contractaddress;
   /**
    * Type of block (block/uncle)
    */
-  type: string
+  type: string;
   /**
    * Paging actual page
    */
-  page?: string
+  page?: string;
   /**
    * Paging start
    */
-  offset?: string
+  offset?: string;
   /**
    * Sort Parameter
    */
-  sort?: string
+  sort?: string;
 }

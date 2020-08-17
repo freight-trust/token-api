@@ -29,7 +29,7 @@ npm install
 
 > Production should use pm2, etc.
 
-### Run in *development* mode
+### Run in _development_ mode
 
 Runs the application is development mode. Should not be used in production
 
@@ -43,7 +43,7 @@ or debug it
 npm run dev:debug
 ```
 
-#### Run in *production* mode
+#### Run in _production_ mode
 
 Compiles the application and starts it in production production mode.
 
@@ -68,8 +68,8 @@ npm run test:debug
 
 ## Local Development
 
-* Open you're browser to [http://localhost:3000](http://localhost:3000)
-* Invoke the `/token` endpoint
+- Open you're browser to [http://localhost:3000](http://localhost:3000)
+- Invoke the `/token` endpoint
 
   ```bash
   curl http://localhost:3000/contract/api/v1/token

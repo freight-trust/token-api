@@ -5,14 +5,13 @@
 ## Repository
 
 - service
-  * all the modules/components in a deployment ready package
+  - all the modules/components in a deployment ready package
 - server
-  * standalone server for front end request handling
+  - standalone server for front end request handling
 - network
-  * standlone server for back end request handling
+  - standlone server for back end request handling
 - test
-  * unit testing/contract testing for API and conformance
-
+  - unit testing/contract testing for API and conformance
 
 ## Get Started
 

@@ -1,4 +1,3 @@
-
 $APP_ID=EDIToken
 $PORT=3000 \
 $LOG_LEVEL=debug \

@@ -1,5 +1,5 @@
-import l from '../../common/logger';
-import db from './token.db.service';
+import l from "../../common/logger";
+import db from "./token.db.service";
 
 class TokenService {
   all() {

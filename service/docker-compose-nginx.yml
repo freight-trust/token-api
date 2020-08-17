@@ -21,8 +21,7 @@ services:
     image: backup-service
     volumes:
       - data-volume:/var/lib/backup/data
-        
-    
+
 networks:
   webnet:
 

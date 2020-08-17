@@ -3,8 +3,8 @@ class TokenDatabase {
     this._data = [];
     this._counter = 0;
 
-    this.insert('pool 0');
-    this.insert('pool 1');
+    this.insert("pool 0");
+    this.insert("pool 1");
   }
 
   all() {

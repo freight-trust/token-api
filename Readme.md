@@ -1,6 +1,18 @@
-# EDIToken
+# EDI ERC-20 Token RESTful API Service
 
-EDI Token API
+> This API Service is intended for Exchanges, Pool Operators and Node Operators
+
+## Repository
+
+- service
+  * all the modules/components in a deployment ready package
+- server
+  * standalone server for front end request handling
+- network
+  * standlone server for back end request handling
+- test
+  * unit testing/contract testing for API and conformance
+
 
 ## Get Started
 

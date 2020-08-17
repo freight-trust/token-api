@@ -1,0 +1,31 @@
+# Reference https://docs.docker.com/compose/compose-file/compose-file-v2/#cpu-and-other-resources
+# 
+
+cpu_count: 2
+cpu_percent: 50
+cpus: 0.5
+cpu_shares: 73
+cpu_quota: 50000
+cpu_period: 20ms
+cpuset: 0,1
+
+user: postgresql
+working_dir: /code
+
+domainname: foo.com
+hostname: foo
+ipc: host
+mac_address: 02:42:ac:11:65:43
+
+mem_limit: 1000000000
+memswap_limit: 2000000000
+mem_reservation: 512m
+privileged: true
+
+oom_score_adj: 500
+oom_kill_disable: true
+
+read_only: true
+shm_size: 64M
+stdin_open: true
+tty: tru

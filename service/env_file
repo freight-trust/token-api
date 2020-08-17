@@ -1,0 +1,9 @@
+# dockerfile env_file
+# see: https://docs.docker.com/compose/compose-file/#env_file
+APP_ID=EDIToken
+PORT=3000
+LOG_LEVEL=debug
+REQUEST_LIMIT=100kb
+SESSION_SECRET=mySecret
+OPENAPI_SPEC=/contract/api/v1/spec
+OPENAPI_ENABLE_RESPONSE_VALIDATION=false

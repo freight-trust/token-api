@@ -1,2 +1,0 @@
-yarn \
-    yarn policies set-version $YARN_VERSION

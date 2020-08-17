@@ -1,9 +1,0 @@
-version: "3"
-
-services:
-  editoken-api:
-
-labels:
-  com.freighttrust.description: "EDI Token API "
-  com.freighttrust.department: "Network Operations Group"
-  com.freighttrust.label-with-empty-value: ""

@@ -1,4 +1,0 @@
-docker build -<<EOF
-FROM freightnetwork/editoken-api
-LABEL maintainer="Freight Trust <corporate@freighttrust.com>"
-EOF

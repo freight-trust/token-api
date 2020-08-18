@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+docker build -t freightnetwork/erc20api .           # -t for --tag
+docker run -d --name freightnetwork/erc20api freightnetwork/erc20api    # -d for daemon
+docker logs -f freightnetwork/erc20api              # -f for --follow
+docker run --rm freightnetwork/erc20api             # --rm will remove/delete the container when it exits
+docker run -p 80:3000 freightnetwork/erc20api

@@ -1,18 +1,8 @@
 ARG VERSION=latest
 FROM node:12
-ARG VERSION
+ARG $VERSION
 
 LABEL maintainer="Freight Trust <corporate@freighttrust.com>"
-
-# RUN npm install pm2 -g
-
-ENV APP_ID=EDIToken \
-    PORT=3000 \
-    LOG_LEVEL=debug \
-    REQUEST_LIMIT=100kb \
-    SESSION_SECRET=mySecret \
-    OPENAPI_SPEC=/contract/api/v1/spec \
-    OPENAPI_ENABLE_RESPONSE_VALIDATION=false
 
 RUN mkdir -p /opt/server/node_modules/ \
     touch /opt/server/node_modules/.gitkeep \
@@ -47,6 +37,5 @@ EXPOSE 80 443 43554 8081 3000
 
 USER node
 
+ENTRYPOINT ["./bin/entrypoint.sh"]
 CMD [ "node", "index.js" ]
-
-# CMD ["pm2-runtime", "start", "pm2.json"]
